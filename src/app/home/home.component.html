@@ -1,0 +1,106 @@
+
+
+    <div class="page-wrapper chiller-theme toggled">
+      <a id="show-sidebar" class="btn btn-sm btn-dark">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="#"> Training System </a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                alt="User picture">
+            </div>
+            <div class="user-info">
+              <span class="user-name">Jhon
+                <strong>Smith</strong>
+              </span>
+              <span class="user-role">Administrator</span>
+              
+            </div>
+          </div>
+          <!-- sidebar-header  -->
+          
+          <!-- sidebar-search  -->
+          <div class="sidebar-menu">
+            <ul>
+              <li class="header-menu">
+                <span>General</span>
+              </li>
+              <li class="">
+                  <a href="#">
+                    <span> Search Training </span>
+                  </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                      <span> Completed Training </span>
+                    </a>
+                  </li>
+              <li class="">
+                <a href="#">
+                  <span> In Progress Training </span>
+                </a>
+              </li>
+                
+              
+              
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+        
+      </nav>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content">
+          <div class="sidebar-search">
+              <div>
+                <div class="input-group">
+                  <input type="text" class="form-control search-menu" placeholder="Search...">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="container-fluid">
+          <h2> Trainings </h2>
+          <hr>
+          
+        </div>
+        <div class="addInforTable">
+            <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col"> Trainer Name</th>
+                <th scope="col"> Skills </th>
+                <th scope="col"> Timings </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let training of trainings; index as i">
+                <td>{{i+1}}</td>
+                <td>{{training.name}}</td>
+                <td>{{training.skills}}</td>
+                <td>{{training.timings}}</td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+   
+    
